@@ -45,12 +45,12 @@ express@4.12.3 ../../../node_modules/express
 ├── utils-merge@1.0.0
 ...
 ```
-You can now use your package `express` in your project. To do so, you type `npm install express`. 
+You can now use `express` package in your project. To do so, just type `express` in your project directory. 
 ```node
-npm install express
-express@4.2.0 node_modules/express
-├── parseurl@1.0.1
-├── merge-descriptors@0.0.2
+express
+ create : .
+   create : ./package.json
+   create : ./app.js
 ...
 ```
 Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdated. You can check these by typing `npm ls` and `npm outdated` in command line.
@@ -73,7 +73,7 @@ static-favicon  MISSING   1.0.2  2.0.0-alpha  static-favicon
 cookie-parser   MISSING   1.0.1        1.3.4  cookie-parser
 morgan          MISSING   1.0.1        1.5.2  morgan
 ```
-Instead of installing each dependecy and doing update, you can just type `npm install` and NPM will take care of this tedious task in one command. 
+Instead of installing each dependecy and doing update, you can just type `npm install` and NPM will take care of this tedious task. 
 ```node
 npm install
 
@@ -106,7 +106,7 @@ debug             0.7.4   0.7.4        2.1.3  debug
 jade              1.3.1   1.3.1        1.9.2  jade
 ```
 ##Install Packages Globally##
-Although it is possible to instally any package globally, the ideal sencario to install a package globally is when you use the package from command line. For example: you would want to use `grunt` directly from command line. In order to install a package globally, you'd need to add `-g` flag. 
+Although it is possible to instally all packages globally, the ideal sencario to install a package globally is when you use the package from command line. For example: you would want to use `grunt` as a tool directly from command line. In order to install a package globally, you'd need to add `-g` flag. 
 ```node
 npm install grunt -g
 ```
@@ -142,4 +142,3 @@ If you've already created a node project, you'll see `package.json` file is auto
   }
 }
 ```
-
