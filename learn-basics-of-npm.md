@@ -50,7 +50,7 @@ express
    create : ./app.js
 ...
 ```
-Here is the best part about using NPM in building apps. As you can see below `express` package has quite a number of dependencies and some dependency packages are outdated. You can check these by typing `npm ls` and `npm outdated` in command line.
+Here is the best part about using NPM in building apps. As you can see below, `express` package has quite a number of dependencies and some dependency packages are outdated. You can check these by typing `npm ls` and `npm outdated` in command line.
 ```node
 npm ls
 1.0.0, required by mod-express@0.0.1
