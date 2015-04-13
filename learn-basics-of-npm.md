@@ -114,7 +114,7 @@ When installing packages, you may have noticed a warning message like `npm WARN 
 The `package.json` file must contain the following.
 ```javascript
 {
-  "name": "mod-express",
+  "name": "It is my node app",
   
   "dependencies": {
   }
