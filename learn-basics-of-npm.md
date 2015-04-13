@@ -12,7 +12,7 @@ It is always good practice to update your npm as it gets updated more frequently
 sudo npm install npm -g
 /usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
 ```
-Now, if you check the updated npm version, it will show that npm upgraded from 1.4.28 to 2.7.6.
+Now, if you check the npm version, it will show that npm updated from 1.4.28 to 2.7.6.
 ```node
 npm --version
 2.7.6
