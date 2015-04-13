@@ -1,6 +1,6 @@
 ![Modulus] (https://media.licdn.com/media/p/5/005/083/352/39eb6ec.png)
 #Learn The Basics of NPM#
-NPM is a great place to get everything you need to build Node.js app. It is a repository for Node packages and it's a place where all packages are kept and updated. So, you don't have to constantly check various websites for depencecy updates. All you need to is upgrade your packages through NPM by typing `npm <option>` in command line from your project folder. 
+NPM is a great place to get everything you need to build Node.js (node) app. It is a repository for node packages and it's a place where all packages are kept and updated. So, you don't have to constantly check various websites for depencecies and updates. All you need to is upgrade your packages through NPM by typing `npm <option>` in command line from your project folder. 
 
 ##Where to get NPM###
 NPM already comes with Node.js when you download and install Node on your machine (computer). Try typing `npm --verson` terminal and it should show something like this.
@@ -19,8 +19,9 @@ npm --version
 2.7.6
 ```
 ##Install Packages with NPM##
-To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express.js, Angular.js and Modulus. 
-
+To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express, Grunt and Modulus. 
+##Installing Packages Locally vs. Globally##
+There are two ways to install packages through npm: local and global. Locally installed packages are project specific and normally you use this type of package with `var express = require('express')` in your app.js file. On the other hand, global package install will create a command line tool such as `grunt`. 
 ##Install Packages Locally##
 It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope.
 ```node
@@ -134,7 +135,6 @@ If you've already created a node project, you'll see that `package.json` file is
   }
 }
 ```
-##Installing Packages Locally vs. Globally##
 
 ##Uninstall Packages##
 If you choose to remove a package from your project, you can type `npm uninstall <package>`. 
