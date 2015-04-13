@@ -59,6 +59,7 @@ npm ERR! missing: cookie-parser@~1.0.1, required by mod-express@0.0.1
 npm ERR! missing: body-parser@~1.0.0, required by mod-express@0.0.1
 npm ERR! missing: debug@~0.7.4, required by mod-express@0.0.1
 npm ERR! missing: jade@~1.3.0, required by mod-express@0.0.1
+...
 
 npm outdated
 Package         Current  Wanted       Latest  Location
@@ -70,7 +71,7 @@ static-favicon  MISSING   1.0.2  2.0.0-alpha  static-favicon
 cookie-parser   MISSING   1.0.1        1.3.4  cookie-parser
 morgan          MISSING   1.0.1        1.5.2  morgan
 ```
-Instead of installing each dependency and doing an update individually, you can just type `npm install` and NPM will take care of this tedious task automagically.
+Instead of installing each dependency and doing update individually, you can just type `npm install` and NPM will take care of this tedious task automagically.
 ```node
 npm install
 
