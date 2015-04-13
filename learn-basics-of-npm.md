@@ -53,8 +53,9 @@ express@4.2.0 node_modules/express
 ├── merge-descriptors@0.0.2
 ...
 ```
-Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdated. 
+Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdated. You can check these by typing `npm ls` and `npm outdated` in command line.
 ```node
+npm ls
 1.0.0, required by mod-express@0.0.1
 npm ERR! missing: morgan@~1.0.0, required by mod-express@0.0.1
 npm ERR! missing: cookie-parser@~1.0.1, required by mod-express@0.0.1
