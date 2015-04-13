@@ -50,7 +50,7 @@ express@4.2.0 node_modules/express
 ├── merge-descriptors@0.0.2
 ...
 ```
-Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdate. Instead of installing each dependecy and doing update, you can just type `npm install` and NPM will take care of this tedious task. 
+Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdates. 
 ```node
 1.0.0, required by mod-express@0.0.1
 npm ERR! missing: morgan@~1.0.0, required by mod-express@0.0.1
@@ -69,7 +69,7 @@ static-favicon  MISSING   1.0.2  2.0.0-alpha  static-favicon
 cookie-parser   MISSING   1.0.1        1.3.4  cookie-parser
 morgan          MISSING   1.0.1        1.5.2  morgan
 ```
-
+Instead of installing each dependecy and doing update, you can just type `npm install` and NPM will take care of this tedious task in one command. 
 ```node
 npm install
 
