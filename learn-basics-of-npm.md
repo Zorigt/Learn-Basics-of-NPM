@@ -20,7 +20,7 @@ npm --version
 ##Install Packages with NPM##
 To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express, Grunt and Modulus. 
 ##Installing Packages Locally vs. Globally##
-There are two ways to install packages through npm: local and global. Locally installed packages are project specific and normally you use this type of package with `var express = require('express')` in your app.js file. On the other hand, global-package install will create a command line tool such as `grunt`. If you plan to use a package from command line, you'd want to install the package globally. As you read along, you'll learn how to install packages both locally and globally.
+There are two ways to install packages through npm: local and global. Locally installed packages are project specific and normally you use this type of package with `var express = require('express')` in your `app.js` file. On the other hand, global install will create a command line tool such as `grunt`. If you plan to use a package from command line, you'd want to install the package globally. As you read along, you'll learn how to install packages both locally and globally.
 ##Install Packages Locally##
 It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope.
 ```node
