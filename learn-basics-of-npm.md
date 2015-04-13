@@ -23,7 +23,7 @@ To most people, the main use of NPM is to install node packages into your projec
 
 ##Install Packages Locally##
 It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope. If you get a permission error, you may need to type `sudo` infront of npm. 
-```
+```npm
 npm install express
 npm WARN package.json node@0.0.0 No description
 npm WARN package.json node@0.0.0 No repository field.
