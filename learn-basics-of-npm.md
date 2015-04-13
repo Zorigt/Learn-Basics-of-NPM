@@ -120,7 +120,7 @@ The `package.json` file must contain the following.
   }
 }
 ```
-If you've already created a node project, you'll see `package.json` file automatically created in your directory. You can edit this json file to add or remove packages directly and call `npm install` from command line to update your project dependencies. You can also use `npm install <package> --save` which will not only install the package but also add the package to `package.json`. This makes it easy for node app to be cloned and collaborate with team of developers. 
+If you've already created a node project, you'll see `package.json` file automatically created in your directory. You can edit this json file to add or remove packages directly and call `npm install` from command line to update your project dependencies. You can also use `npm install <package> --save` which will not only install the package but also add the package to `package.json`. This makes your node app easy to clone and collaborate with team of developers. 
 
 An example of `package.json` file created by Express.js looks like this.
 ```node
