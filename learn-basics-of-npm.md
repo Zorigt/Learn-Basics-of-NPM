@@ -3,7 +3,7 @@
 NPM is a great place to get everything you need to build Node.js app. It is a repository for Node packages and it's a place where all packages are kept and updated. So, you don't have to constantly check various websites for depencecy updates. All you need to is upgrade your packages through NPM by typing `npm <option>` in command line from your project folder. 
 
 ##Where to get NPM?###
-NPM already comes with Node.js when you download and install Node on your machine (computer). Try typing `npm --verson` and it should show something like this.
+NPM already comes with Node.js when you download and install Node on your machine (computer). Try typing `npm --verson` terminal and it should show something like this.
 ```
 mac-4:modulus user$ npm --version
 1.4.28
