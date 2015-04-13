@@ -21,8 +21,8 @@ npm --version
 ##Install Packages with NPM##
 To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express.js, Angular.js and Modulus. 
 
-##Install Locally##
-It is easy to upload packages through npm. Just type `npm install <package>` in command line. If you get a permission error, you may need to type `sudo` infront of npm. 
+##Install Packages Locally##
+It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope. If you get a permission error, you may need to type `sudo` infront of npm. 
 ```
 npm install express
 npm WARN package.json node@0.0.0 No description
@@ -32,7 +32,7 @@ npm ERR! argv "node" "/usr/local/bin/npm" "install" "express"
 ...
 ```
 If you get a permission error, you may need to type `sudo` infront of `npm`. 
-```
+```node
 sudo npm install express
 Password:
 npm WARN package.json node@0.0.0 No description
@@ -42,7 +42,8 @@ express@4.12.3 ../../../node_modules/express
 ├── utils-merge@1.0.0
 ...
 ```
-##Install Globally##
+
+##Install Packages Globally##
 
 ##Organize Packages with `package.json` File##
 You may have noticed a warning message `npm WARN packag.json node@0.0.0 No description` and it is because node uses `package.json` file for configuration. Therefore, npm also likes to use this file for the same purpose. The good news is that you can just create a file named `package.json` and the warning message will go away. It is very easy to create this file. All you need to do is to list two parameters `name` and `dependencies` in the file. 
@@ -55,5 +56,10 @@ The `package.json` file must contain the following.
   }
 }
 ```
-##Installing Locally vs. Globally##
+##Installing Packages Locally vs. Globally##
 
+##Uninstall Packages##
+If you choose to remove a package from your project, you can type `npm uninstall <package>`. 
+```
+
+```
