@@ -4,17 +4,17 @@ NPM is a great place to get everything you need to build Node.js app. It is a re
 
 ##Where to get NPM###
 NPM already comes with Node.js when you download and install Node on your machine (computer). Try typing `npm --verson` terminal and it should show something like this.
-```
+```node
 npm --version
 1.4.28
 ```
-It is always good practice to update your npm as npm gets updated more frequently than node. So, it is recommended that you get the latest version of npm like so. 
-```
+It is always good practice to update your npm as it gets updated more frequently than node. So, it is recommended that you get the latest version of npm like so. 
+```node
 sudo npm install npm -g
 /usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
 ```
 Now, if you check the updated npm version, it will show that npm upgraded from 1.4.28 to 2.7.6.
-```
+```node
 npm --version
 2.7.6
 ```
@@ -23,7 +23,7 @@ To most people, the main use of NPM is to install node packages into your projec
 
 ##Install Packages Locally##
 It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope. If you get a permission error, you may need to type `sudo` infront of npm. 
-```npm
+```node
 npm install express
 npm WARN package.json node@0.0.0 No description
 npm WARN package.json node@0.0.0 No repository field.
