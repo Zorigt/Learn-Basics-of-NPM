@@ -20,8 +20,10 @@ npm --version
 ```
 ##Install Packages with NPM##
 To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express, Grunt and Modulus. 
+
 ##Installing Packages Locally vs. Globally##
-There are two ways to install packages through npm: local and global. Locally installed packages are project specific and normally you use this type of package with `var express = require('express')` in your app.js file. On the other hand, global package install will create a command line tool such as `grunt`. 
+There are two ways to install packages through npm: local and global. Locally installed packages are project specific and normally you use this type of package with `var express = require('express')` in your app.js file. On the other hand, global package install will create a command line tool such as `grunt`. If you plan to use a package from command line, you'd want to install the package globally. As you read along, you'll learn how to install packages locally and globally.
+
 ##Install Packages Locally##
 It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope.
 ```node
@@ -119,7 +121,7 @@ The `package.json` file must contain the following.
   }
 }
 ```
-If you've already created a node project, you'll see that `package.json` file is automatically created in your diretory. You can edit this json file to add or remove packages directly from there and call `npm install` from command line. An example of `package.json` file created by Express.js looks like this. 
+If you've already created a node project, you'll see `package.json` file is automatically created in your diretory. You can edit this json file to add or remove packages directly and call `npm install` from command line to update your project dependencies. You can also call `npm install <package> --save` which will not only install the package but also add the package name to `package.json`. This makes it easy for your app to be cloned and collaborate with a team of developers. An example of `package.json` file created by Express.js looks like this. 
 ```node
 {
   "name": "mod-express",
@@ -140,8 +142,3 @@ If you've already created a node project, you'll see that `package.json` file is
 }
 ```
 
-##Uninstall Packages##
-If you choose to remove a package from your project, you can type `npm uninstall <package>`. 
-```
-
-```
