@@ -109,7 +109,7 @@ Although it is possible to install all packages globally, the ideal scenario to 
 npm install -g grunt-cli
 ```
 ##Organize Packages with `package.json` File##
-When installing a package, you may have noticed a warning message `npm WARN packag.json node@0.0.0 No description`. It is because node uses `package.json` file for configuration and npm also likes to use this file for the same purpose. The good news is that you can just create a file named `package.json` to make the warning go away. It is very easy to create this file. All you have to do is list two parameters `name` and `dependencies` in the json.
+When installing packages, you may have noticed a warning message like `npm WARN packag.json node@0.0.0 No description`. It is because node uses `package.json` file for configuration and npm also likes to use this file for the same purpose. The good news is that you can just create a file named `package.json` to make the warning go away. This file is very easy to create. All you have to do is list two parameters `name` and `dependencies` in the json.
 
 The `package.json` file must contain the following.
 ```javascript
