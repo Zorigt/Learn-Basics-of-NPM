@@ -39,7 +39,7 @@ express@4.12.3 ../../../node_modules/express
 ├── utils-merge@1.0.0
 ...
 ```
-You may have noticed a warning message `npm WARN packag.json node@0.0.0 No description` and it is because node uses `package.json` file as configuration. Therefore, npm also likes to use this file for same purpose. The good news is that you can just create and the warning will go away. It is easy to create the file and all you need to do is list two parameters `name` and `dependencies`. 
+You may have noticed a warning message `npm WARN packag.json node@0.0.0 No description` and it is because node uses `package.json` file for configuration. Therefore, npm also likes to use this file for the same purpose. The good news is that you can just create a file named `package.json` and the warning message will go away. It is very easy to create this file. All you need to do is to list two parameters `name` and `dependencies` in the file. 
 ```javascript
 {
   "name": "mod-express"
