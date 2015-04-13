@@ -26,8 +26,7 @@ npm WARN package.json node@0.0.0 No description
 npm WARN package.json node@0.0.0 No repository field.
 npm ERR! Darwin 14.0.0
 npm ERR! argv "node" "/usr/local/bin/npm" "install" "express"
-npm ERR! node v0.10.33
-npm ERR! npm  v2.7.6
+...
 ```
 If you get a permission error, you may need to type `sudo` infront of `npm`. 
 ```
@@ -38,7 +37,7 @@ npm WARN package.json node@0.0.0 No repository field.
 express@4.12.3 ../../../node_modules/express
 ├── merge-descriptors@1.0.0
 ├── utils-merge@1.0.0
-
+...
 ```
 You may have noticed a warning message `npm WARN packag.json node@0.0.0 No description` and it is because node uses `package.json` file as configuration. Therefore, npm also likes to use this file for same purpose. The good news is that you can just create and the warning will go away. It is easy to create the file and all you need to do is list two parameters `name` and `dependencies`. 
 ```javascript
