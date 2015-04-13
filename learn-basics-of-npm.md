@@ -22,7 +22,7 @@ npm --version
 To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express.js, Angular.js and Modulus. 
 
 ##Install Packages Locally##
-It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope. If you get a permission error, you may need to type `sudo` infront of npm. 
+It is easy to upload packages through npm. Just type `npm install <package>` in command line. This command will install packages locally, which means your packages will be available only within your project scope.
 ```node
 npm install express
 npm WARN package.json node@0.0.0 No description
@@ -42,7 +42,65 @@ express@4.12.3 ../../../node_modules/express
 ├── utils-merge@1.0.0
 ...
 ```
+You can now use your package `express` in your project. To do so, you type `npm install express`. 
+```node
+npm install express
+express@4.2.0 node_modules/express
+├── parseurl@1.0.1
+├── merge-descriptors@0.0.2
+...
+```
+Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdate. Instead of installing each dependecy and doing update, you can just type `npm install` and NPM will take care of this tedious task. 
+```node
+1.0.0, required by mod-express@0.0.1
+npm ERR! missing: morgan@~1.0.0, required by mod-express@0.0.1
+npm ERR! missing: cookie-parser@~1.0.1, required by mod-express@0.0.1
+npm ERR! missing: body-parser@~1.0.0, required by mod-express@0.0.1
+npm ERR! missing: debug@~0.7.4, required by mod-express@0.0.1
+npm ERR! missing: jade@~1.3.0, required by mod-express@0.0.1
 
+npm outdated
+Package         Current  Wanted       Latest  Location
+express         MISSING   4.2.0       4.12.3  express
+debug           MISSING   0.7.4        2.1.3  debug
+jade            MISSING   1.3.1        1.9.2  jade
+body-parser     MISSING   1.0.2       1.12.2  body-parser
+static-favicon  MISSING   1.0.2  2.0.0-alpha  static-favicon
+cookie-parser   MISSING   1.0.1        1.3.4  cookie-parser
+morgan          MISSING   1.0.1        1.5.2  morgan
+```
+
+```node
+npm install
+
+morgan@1.0.1 node_modules/morgan
+└── bytes@0.3.0
+
+cookie-parser@1.0.1 node_modules/cookie-parser
+├── cookie-signature@1.0.3
+└── cookie@0.1.0
+
+body-parser@1.0.2 node_modules/body-parser
+├── qs@0.6.6
+├── raw-body@1.1.7 (string_decoder@0.10.31, bytes@1.0.0)
+└── type-is@1.1.0 (mime@1.2.11)
+
+express@4.2.0 node_modules/express
+├── parseurl@1.0.1
+├── merge-descriptors@0.0.2
+├── utils-merge@1.0.0
+...
+
+npm outdated
+Package         Current  Wanted       Latest  Location
+cookie-parser     1.0.1   1.0.1        1.3.4  cookie-parser
+morgan            1.0.1   1.0.1        1.5.2  morgan
+static-favicon    1.0.2   1.0.2  2.0.0-alpha  static-favicon
+body-parser       1.0.2   1.0.2       1.12.2  body-parser
+express           4.2.0   4.2.0       4.12.3  express
+debug             0.7.4   0.7.4        2.1.3  debug
+jade              1.3.1   1.3.1        1.9.2  jade
+```
 ##Install Packages Globally##
 
 ##Organize Packages with `package.json` File##
