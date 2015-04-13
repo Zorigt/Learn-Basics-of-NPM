@@ -50,8 +50,8 @@ You may have noticed a warning message `npm WARN packag.json node@0.0.0 No descr
 The `package.json` file must contain the following.
 ```javascript
 {
-  "name": "mod-express"
-  },
+  "name": "mod-express",
+  
   "dependencies": {
   }
 }
