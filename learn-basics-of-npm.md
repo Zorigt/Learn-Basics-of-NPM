@@ -50,7 +50,7 @@ express@4.2.0 node_modules/express
 ├── merge-descriptors@0.0.2
 ...
 ```
-Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdates. 
+Here is the best part about using NPM in building apps. As you can see below `express` packages has quite a number of dependencies and some dependecy packages are outdated. 
 ```node
 1.0.0, required by mod-express@0.0.1
 npm ERR! missing: morgan@~1.0.0, required by mod-express@0.0.1
@@ -111,6 +111,26 @@ The `package.json` file must contain the following.
   "name": "mod-express",
   
   "dependencies": {
+  }
+}
+```
+If you've already created a node project, you'll see that `package.json` file is automatically created in your diretory. You can edit this json file to add or remove packages directly from there and call `npm install` from command line. An example of `package.json` file created by Express.js looks like this. 
+```node
+{
+  "name": "mod-express",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0"
   }
 }
 ```
