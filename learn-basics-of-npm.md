@@ -2,7 +2,7 @@
 #Learn The Basics of NPM#
 NPM is a great place to get everything you need to build Node.js app. It is a repository for Node packages and it's a place where all packages are kept and updated. So, you don't have to constantly check various websites for depencecy updates. All you need to is upgrade your packages through NPM by typing `npm <option>` in command line from your project folder. 
 
-##Where to get NPM?###
+##Where to get NPM###
 NPM already comes with Node.js when you download and install Node on your machine (computer). Try typing `npm --verson` terminal and it should show something like this.
 ```
 npm --version
@@ -19,7 +19,10 @@ npm --version
 2.7.6
 ```
 ##Install Packages with NPM##
-To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express.js, Angular.js and Modulus. It is easy to upload packages through npm. Just type `npm install <package>` in command line. If you get a permission error, you may need to type `sudo` infront of npm. 
+To most people, the main use of NPM is to install node packages into your project. You're probably familiar with popular packages such as Express.js, Angular.js and Modulus. 
+
+##Install Locally##
+It is easy to upload packages through npm. Just type `npm install <package>` in command line. If you get a permission error, you may need to type `sudo` infront of npm. 
 ```
 npm install express
 npm WARN package.json node@0.0.0 No description
@@ -39,6 +42,9 @@ express@4.12.3 ../../../node_modules/express
 ├── utils-merge@1.0.0
 ...
 ```
+##Install Globally##
+
+##Organize Packages with `package.json` File##
 You may have noticed a warning message `npm WARN packag.json node@0.0.0 No description` and it is because node uses `package.json` file for configuration. Therefore, npm also likes to use this file for the same purpose. The good news is that you can just create a file named `package.json` and the warning message will go away. It is very easy to create this file. All you need to do is to list two parameters `name` and `dependencies` in the file. 
 The `package.json` file must contain the following.
 ```javascript
@@ -49,10 +55,5 @@ The `package.json` file must contain the following.
   }
 }
 ```
-
-##Install Locally##
-
-##Install Globally##
-
 ##Installing Locally vs. Globally##
 
